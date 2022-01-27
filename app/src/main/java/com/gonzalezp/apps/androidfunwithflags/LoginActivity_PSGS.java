@@ -9,11 +9,14 @@ import android.widget.EditText;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class LoginActivity_PSGS extends AppCompatActivity {
 
     private EditText user;
     private EditText pass;
+    public InputStream is;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,21 +25,21 @@ public class LoginActivity_PSGS extends AppCompatActivity {
 
         user = findViewById(R.id.textbox_usuario);
         pass = findViewById(R.id.textbox_clave);
+
     }
 
     public void onClickIngresar(View view) {
 
         String usr = user.getText().toString();
         String pas = pass.getText().toString();
-        StringBuilder text = new StringBuilder();
-        File file1 = new File(usr1);
-        File file2 = new File(usr2);
+        String data = "";
+        StringBuffer sbuff = new StringBuffer();
+        BufferedReader read = new BufferedReader(new InputStreamReader(is));
 
         if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || (!usr.isEmpty() && !pas.isEmpty())) {
 
             if (usr == "usr1"){
                 try{
-                    BufferedReader read = new BufferedReader(new FileReader(file1));
 
                 }catch (Exception ex){
                     ex.getMessage();
