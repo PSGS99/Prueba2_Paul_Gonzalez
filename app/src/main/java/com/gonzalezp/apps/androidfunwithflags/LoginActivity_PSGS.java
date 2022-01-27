@@ -23,21 +23,22 @@ public class LoginActivity_PSGS extends AppCompatActivity {
 
     public void onClickIngresar(View view) {
 
-        if ((user == 'usr1' && pass == 'usr1')){
+        String usr = user.getText().toString();
+        String pas = pass.getText().toString();
 
+        if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || !usr.isEmpty() && !pas.isEmpty()){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
 
-        String nom = textNombre.getText().toString();
-        String ape = textApellido.getText().toString();
-
-        if (!nom.isEmpty() && !ape.isEmpty()) {
-            Intent intent = new Intent(this, SecondActivity.class);
+        /*if (!nom.isEmpty() && !ape.isEmpty()) {
+            Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("key_nombre", nom);
             intent.putExtra("key_apellido", ape);
             startActivity(intent);
         } else {
             Toast.makeText(this, "Nombre y Apellido requeridos", Toast.LENGTH_LONG).show();
-        }
+        }*/
 
     }
 
