@@ -9,6 +9,7 @@ import android.widget.EditText;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
@@ -16,7 +17,6 @@ public class LoginActivity_PSGS extends AppCompatActivity {
 
     private EditText user;
     private EditText pass;
-    public InputStream is;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,6 @@ public class LoginActivity_PSGS extends AppCompatActivity {
 
         user = findViewById(R.id.textbox_usuario);
         pass = findViewById(R.id.textbox_clave);
-
     }
 
     public void onClickIngresar(View view) {
@@ -33,8 +32,8 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         String usr = user.getText().toString();
         String pas = pass.getText().toString();
         String data = "";
-        StringBuffer sbuff = new StringBuffer();
-        BufferedReader read = new BufferedReader(new InputStreamReader(is));
+        int nivel1;
+        int nivel2;
 
         if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || (!usr.isEmpty() && !pas.isEmpty())) {
 
@@ -45,7 +44,11 @@ public class LoginActivity_PSGS extends AppCompatActivity {
                     ex.getMessage();
                 }
             }else{
+                try{
 
+                }catch (Exception ex){
+                    ex.getMessage();
+                }
             }
 
 
@@ -54,6 +57,7 @@ public class LoginActivity_PSGS extends AppCompatActivity {
             intent.putExtra("key_user", usr);
             startActivity(intent);
         }
+
     }
 
         /*if (!nom.isEmpty() && !ape.isEmpty()) {
