@@ -30,6 +30,11 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         user = findViewById(R.id.textbox_usuario);
         pass = findViewById(R.id.textbox_clave);
 
+        /*Context ctx = getApplicationContext();
+        FileInputStream file = ctx.openFileInput();
+        InputStreamReader input = new InputStreamReader(file);
+        BufferedReader buff = new BufferedReader(input);
+        String line = buff.readLine();*/
     }
 
     public void onClickIngresar(View view) {
@@ -37,33 +42,7 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         String usr = user.getText().toString();
         String pas = pass.getText().toString();
 
-        /*FileInputStream file;
-        file = openFileInput("usr1");
-        InputStreamReader input = new InputStreamReader(file);
-        BufferedReader buff = new BufferedReader(InputStreamReader);
-
-        StringBuilder str = new StringBuilder();
-        String tet = null;*/
-
-
-
         if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || (!usr.isEmpty() && !pas.isEmpty())) {
-
-            /*if (usr == "usr1"){
-                try{
-
-                }catch (Exception ex){
-                    ex.getMessage();
-                }
-            }else{
-                try{
-
-                }catch (Exception ex){
-                    ex.getMessage();
-                }
-            }*/
-
-
 
             Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra("key_user", usr);

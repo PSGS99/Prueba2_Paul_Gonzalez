@@ -9,12 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e92681d6-d1c5-46f5-a930-ea6a9b5a3cf4" name="Default Changelist" comment="Gonzalez Paul 20:30">
+    <list default="true" id="e92681d6-d1c5-46f5-a930-ea6a9b5a3cf4" name="Default Changelist" comment="Gonzalez Paul 20:45">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/LoginActivity_PSGS.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/LoginActivity_PSGS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/MainActivityFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/MainActivityFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643247041531</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Gonzalez Paul 20:45">
+      <created>1643248091211</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643248091211</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +205,7 @@
     <MESSAGE value="Gonzalez Paul 20:00" />
     <MESSAGE value="Gonzalez Paul 20:15" />
     <MESSAGE value="Gonzalez Paul 20:30" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gonzalez Paul 20:30" />
+    <MESSAGE value="Gonzalez Paul 20:45" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gonzalez Paul 20:45" />
   </component>
 </project>

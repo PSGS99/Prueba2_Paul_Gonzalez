@@ -42,6 +42,7 @@ public class MainActivityFragment extends Fragment {
     private TextView answerTextView;
     private QuizViewModel quizViewModel;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

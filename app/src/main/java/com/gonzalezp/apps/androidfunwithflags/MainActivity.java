@@ -58,9 +58,10 @@ public class MainActivity extends AppCompatActivity {
         this.setSharedPreferences();
         this.screenSetUp();
 
-        String user = getIntent().getExtras().get("usr").toString();
+        String user = getIntent().getExtras().get("key_user").toString();
         Toast.makeText(this, user, Toast.LENGTH_SHORT).show();
         userName = findViewById(R.id.textView_usr);
+        userName.setText(user);
     }
 
     @Override
@@ -69,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
         if (preferencesChanged) {
             this.quizFragment = (MainActivityFragment) getSupportFragmentManager()
                     .findFragmentById(R.id.quizFragment);
-            this.quizViewModel.setGuessRows(PreferenceManager.getDefaultSharedPreferences(this)
-                    .getString(CHOICES, null));
+            this.quizViewModel.setGuessRows("2");
             this.quizViewModel.setRegionsSet(PreferenceManager.getDefaultSharedPreferences(this)
                     .getStringSet(REGIONS, null));
 
