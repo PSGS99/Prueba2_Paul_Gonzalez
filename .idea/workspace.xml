@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e92681d6-d1c5-46f5-a930-ea6a9b5a3cf4" name="Default Changelist" comment="Gonzalez Paul 20:00">
+    <list default="true" id="e92681d6-d1c5-46f5-a930-ea6a9b5a3cf4" name="Default Changelist" comment="Gonzalez Paul 20:15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/LoginActivity_PSGS.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/gonzalezp/apps/androidfunwithflags/LoginActivity_PSGS.java" afterDir="false" />
     </list>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643245285621</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gonzalez Paul 20:15">
+      <created>1643246128860</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643246128860</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +185,7 @@
     <MESSAGE value="Gonzalez Paul 19:30" />
     <MESSAGE value="Gonzalez Paul 19:45" />
     <MESSAGE value="Gonzalez Paul 20:00" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gonzalez Paul 20:00" />
+    <MESSAGE value="Gonzalez Paul 20:15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gonzalez Paul 20:15" />
   </component>
 </project>
