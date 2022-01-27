@@ -11,6 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gonzalezp.apps.eventhandlers.PreferenceChangeListener;
 import com.gonzalezp.apps.lifecyclehelpers.QuizViewModel;
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private MainActivityFragment quizFragment;
     private QuizViewModel quizViewModel;
     private OnSharedPreferenceChangeListener preferencesChangeListener;
+    TextView userName;
 
     private void setSharedPreferences() {
         // set default values in the app's SharedPreferences
@@ -53,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.setSharedPreferences();
         this.screenSetUp();
+
+        String user = getIntent().getExtras().get("usr").toString();
+        Toast.makeText(this, user, Toast.LENGTH_SHORT).show();
+        userName = findViewById(R.id.textView_usr);
     }
 
     @Override

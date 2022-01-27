@@ -30,9 +30,6 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         user = findViewById(R.id.textbox_usuario);
         pass = findViewById(R.id.textbox_clave);
 
-        fileOutputStream = openFileOutput(file, Context.MODE_PRIVATE);
-        fileOutputStream
-
     }
 
     public void onClickIngresar(View view) {
@@ -40,19 +37,19 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         String usr = user.getText().toString();
         String pas = pass.getText().toString();
 
-        FileInputStream file;
+        /*FileInputStream file;
         file = openFileInput("usr1");
         InputStreamReader input = new InputStreamReader(file);
         BufferedReader buff = new BufferedReader(InputStreamReader);
 
         StringBuilder str = new StringBuilder();
-        String tet = null;
+        String tet = null;*/
 
 
 
         if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || (!usr.isEmpty() && !pas.isEmpty())) {
 
-            if (usr == "usr1"){
+            /*if (usr == "usr1"){
                 try{
 
                 }catch (Exception ex){
@@ -64,7 +61,7 @@ public class LoginActivity_PSGS extends AppCompatActivity {
                 }catch (Exception ex){
                     ex.getMessage();
                 }
-            }
+            }*/
 
 
 
@@ -74,14 +71,5 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         }
 
     }
-
-        /*if (!nom.isEmpty() && !ape.isEmpty()) {
-            Intent intent = new Intent(this, MainActivity.class);
-            intent.putExtra("key_nombre", nom);
-            intent.putExtra("key_apellido", ape);
-            startActivity(intent);
-        } else {
-            Toast.makeText(this, "Nombre y Apellido requeridos", Toast.LENGTH_LONG).show();
-        }*/
 
 }
