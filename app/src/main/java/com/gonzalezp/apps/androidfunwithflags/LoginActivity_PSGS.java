@@ -26,7 +26,7 @@ public class LoginActivity_PSGS extends AppCompatActivity {
         String usr = user.getText().toString();
         String pas = pass.getText().toString();
 
-        if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || !usr.isEmpty() && !pas.isEmpty()){
+        if ((usr == "usr1" && pas == "usr1") || (usr == "usr2" && pas == "usr2") || (!usr.isEmpty() && !pas.isEmpty())){
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
